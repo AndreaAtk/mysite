@@ -2,54 +2,185 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   
-    <title>My Webpage Design</title>
-    <link rel="stylesheet" href="style1.css">
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University SMS Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <div class="Main">
-        <div class="navbar">
-            <div class="icon">
-                <h2 class="Logo">Andrea</h2>
-            </div>
-            <div class="menu">
+    <section class="header">
+        <nav>
+            <a href="#"><img src="logo.png"></a>
+            <div class="nav-links" id="navLinks">
                 <ul>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="about.html">ABOUT</a></li>
-                    <li><a href="services.html">SERVICE</a></li>
-                    <li><a href="design.html">DESIGN</a></li>
-                    <li><a href="contact.html">CONTACT</a></li>
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Course</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Contact Us</a></li>
                 </ul>
-            </div>
-            <div class="search">
-                <input class="srch" type="search" name="" placeholder="">
-                <a href="#"><button class="btn">Search</button></a>
 
             </div>
-            <div class="content">
-                <h1>Wed Design & <br><span>Development</span></h1>
-                <p class="par">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus similique voluptatibus officiis ducimus libero praesentium omnis officia quis, maxime animi soluta eaque, iusto non dolorem quam quisquam laudantium sed hic.</p>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
 
-                <button class="cn"><a href="#">JOIN US</a></button>
+        <div class="text-box">
+            <h1>The Ethiopian's leading and largest Private University in Ethiopia</h1>
+            <p>RVU University is one of the Leading Private University known with cultural diversity and research university with 54 campus across the Addis Ababa and different regions, <br>its campuses offers wide ranges of Courses such medical Courses, Engineering and Technology Courses, social sciences courses and busineses as well.</p>
+            <p>It was founded in 2000 in Adama oromo region and upgrade as a University in 2014</p>
+            <a href="" class="hero-btn">For me information please visit our Campuses</a>
+        </div>
 
-                <div class="form">
-                    <h2>Login Here</h2>
-                    <input type="email" name="email" placeholder="Enter Email Here">
-                    <input type="password" name="" placeholder="Enter Password Here">
-                    <button class="btnn"><a href="#">Login</a></button>
+    </section>
 
-                    <p class="link">Don't have an account<br>
-                    <a href="#">Sign up </a>here</a>
-                    <p class="liw">Log in with</p>
+    <!------- Course -------->
+<section class="course">
+    <h1>Courses we offer</h1>
+    <p>We offer numberous courses ranging from Intermediate, Degree, Postgraduate Diploma and Postgraduate Degrees as well</p>
 
-                 
-                </div>
-
-            </div>
+    <div class="row">
+        <div class="course-col">
+            <h3>Intermediate</h3>
+            <p>We offer Intermediate course to the average students who did not perform well in the Grade 12 exams, before the enrolled for the Degree program in our University, we also offer Diploma program that will enhanced students capabailities for the enrolled for the Advanced Degree program</p>
+        </div>
+        <div class="course-col">
+            <h3>Degree Programs</h3>
+            <p>We offer Degree courses to the best students who did perform well in the Grade 12 exams, are allow to enrolled for the Degree program in our University, we also offer Diploma program that will enhanced students capabailities for the hand job opportunities</p>
+        </div>
+        <div class="course-col">
+            <h3>Postgraduate Programs</h3>
+            <p>We offer Postgraduate program courses to the average students who did perform well in the Advanced Degree level and qualified for the Postgraduate programs like Master and PhD Programs as well</p>
         </div>
     </div>
 
-    <script src=""></script>
+</section>
+
+    <!----- Campus ----->
+    <section class="campus">
+        <h1>Our Global Campuses</h1>
+        <p>We have 22 campuses within Addis Ababa City Administration and 32 Campuses across the Ethiopia with head quarter located in Adama City of the Oromo regions and making the Rift Valley University leading University with very Campuses acrosses the Ethiopian Regions and Somailand Campus located in Hergus the Capital of the Somailand Region</p>
+
+        <div class="row">
+            <div class="campus-col">
+                <img src="rvuabichu.jpeg">
+                <div class="layer">
+                    <h3>Abich Campus</h3>
+                </div>
+            </div>
+             <div class="campus-col">
+                <img src="rvucamp.jpeg">
+                <div class="layer">
+                    <h3>Bisfotu Campus</h3>
+                </div>
+            </div>
+             <div class="campus-col">
+                <img src="rvucamph.jpeg">
+                <div class="layer">
+                    <h3>Gottera Main-Campus</h3>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!----- Facilities ----->
+    <section class="facilities">
+        <h1>Our Campuses Facilities</h1>
+        <p>our campuses offer different facilities all over Ethiopia and Somailand regions such as academic library laborary, Computer laborary and school cafe</p>
+
+        <div class="row">
+            <div class="facilities-col">
+                <img src="libraryr.jpeg">
+                <h3>World Class Academic Library</h3>
+                <p>It has a wide ranges of books and Catelog from Medical school, nursing, medical laborary science, nutritions and dental science, social sciences and Technology books from Computer science and different Engineering department</p>
+            </div>
+            <div class="facilities-col">
+                <img src="images.jpeg">
+                <h3>Female Students Library</h3>
+                <p>This is one of the female academic libary where girls read different books and Catelog from Medical school, nursing, medical laborary science, nutritions and dental science, social sciences and Technology books from Computer science and different Engineering department</p>
+            </div>
+            <div class="facilities-col">
+                <img src="libraryuc.jpeg">
+                <h3>Library SMS Reminder Center</h3>
+                <p>This libary Reminder area where students are alert in case the students did not return the book he/she has taken, send notifications to the students who did not return books on time and help in collecting different fines the students as panelity</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!----- testimonials ----->
+    <section class="testimonials">
+        <h1>What are our Students say</h1>
+        <p>Rift Valley University has provided me with an incredible environment for academic growth. The curriculum in the different academic departments challenging but rewarding. We always thanks to the support of the faculty, we have been able to maintain high standards and prepare for a global career. The ICT facilities and the dedication of the lecturers make it the best place to study technology, Medical schools and social sciences</p>
+
+        <div class="row">
+            <div class="testimonial-col">
+                <img src="maker.jpg">
+                <div>
+                    <p>What I love most about Rift Valley University is the focus on practical skills. It’s not just about reading books; it's about preparing for the real world. The ICT facilities and the dedication of the lecturers make it the best place to study technology</p>
+                    <h3>Andrea AtakAtak Wieu</h3>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+            </div>
+            <div class="testimonial-col">
+                <img src="akiim.jpg">
+                <div>
+                    <p>Studying at Rift Valley University was a life-changing decision. The university doesn't just give you a degree; it gives you the confidence to lead in your community and your profession. I am proud to be a student here</p>
+                    <h3>Akiim Thon Ayok</h3>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </section>
+
+    <!----- Call To Action ----->
+
+    <section class="cta">
+        <h1>Please visit our online library</h1>
+        <a href="" class="hero-btn">Contact Us</a>
+    </section>
+
+    <!----- footer ----->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>At Rift Valley University Library, we are committed to making knowledge accessible to everyone. <br>Our modern library system integrates Online Resources and SMS Notifications to <br>ensure that students can study anytime, anywhere.</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Made with<i class="fa fa-heart-o"></i>by Rift Valley University</p>
+    </section>
+
+
+
+    <!---------JavaScript for Toggle Menu------>
+<script>
+
+    var navLinks =document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0"
+    }
+    function showMenu(){
+        navLinks.style.right = "-200px"
+    }
+    
+</script>
     
 </body>
 </html>
